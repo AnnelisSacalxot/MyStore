@@ -7,11 +7,13 @@ import {FormsModule} from "@angular/forms";
 import { HeaderComponent } from './shared/components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MaterialModule} from "./material.module";
+import {ContainerStoreComponent} from "./pages/containerStore/containerStore.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    ContainerStoreComponent
   ],
   imports: [
     BrowserModule,
