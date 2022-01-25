@@ -8,7 +8,7 @@ import {Product} from "../interfaces/product.interface";
   providedIn: 'root'
 })
 export class ProductsService {
-
+  //se prenden ambos servidores 3000 y 4200 para que funcione
   private apiURL='http://localhost:3000/products';
 
   constructor( private http: HttpClient) { }
