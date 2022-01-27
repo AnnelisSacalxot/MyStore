@@ -1,5 +1,14 @@
-<pre>
-  <!–– usando pipe de Angular ––>
-  {{products | json}}
-</pre>
-
+<section class="products">
+  <mat-card class="card" *ngFor="let products of products">
+   <mat-card-header>
+     {{products.name}}
+   </mat-card-header>
+    <mat-card-content>
+      {{products.description}}
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-flat-button color="primary">Comprar
+        <mat-icon>home</mat-icon></button>
+    </mat-card-actions>
+  </mat-card>
+</section>
